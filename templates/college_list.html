@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Colleges(List View)</h1>
+    <li>
+        {% for college in colleges %}
+        <ul>
+            <a href="{% url 'college' college.pk %}">{{college.name}}</a>
+        </ul>
+    </li>
+        {% endfor %}
+</body>
+</html>
