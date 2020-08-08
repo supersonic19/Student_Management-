@@ -65,7 +65,7 @@ class StudentList(ListView):
     fields = '__all__'
     context_object_name = 'students'
 
-class StudentDelete(DeleteView)
-    
-
-
+class StudentDelete(DeleteView):
+    model = models.Student
+    template_name = 'student_delete.html'
+    success_url = '/student_list'

@@ -6,12 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-        <h1>List of all students in all colleges:</h1>
-
-        {% for student in students %}
-            <ul>
-                {{ student.name }}
-            </ul>
-        {% endfor %}
+    <h1>Are you sure you want to delete?</h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <button>No</button>
+        <button type="submit">Yes</button>
+    </form>
 </body>
 </html>
