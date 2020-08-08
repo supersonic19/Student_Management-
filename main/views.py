@@ -5,7 +5,8 @@ from django.views.generic import (
     DetailView,
     ListView,
     CreateView,
-    UpdateView
+    UpdateView,
+    DeleteView
 )
 
 from main import models
@@ -63,6 +64,8 @@ class StudentList(ListView):
     template_name = 'student_list.html'
     fields = '__all__'
     context_object_name = 'students'
+
+class StudentDelete(DeleteView)
     
 
 
