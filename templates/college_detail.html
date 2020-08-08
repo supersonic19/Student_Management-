@@ -15,7 +15,9 @@
         <ul>
             {% for student in object.student_set.all %}
     
-            <li>{{ student.name }}</li>
+            <li>{{ student.name }}
+                {{ student.roll_no }}
+            </li>
             {% endfor %}
         </ul>
 
