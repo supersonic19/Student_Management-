@@ -32,7 +32,7 @@ class CollegeDetail(DetailView):
 
 class CollegeList(ListView):
     model = models.College
-    template_name = 'college_detail.html'
+    template_name = 'college_list.html'
     context_object_name = 'colleges'    
 
 
